@@ -4,7 +4,7 @@
  * 
  * @package notice
  * @author jrotty
- * @version 0.2
+ * @version 0.3
  * @link http://qqdie.com
  */
 
@@ -27,11 +27,11 @@ class notice_Plugin implements Typecho_Plugin_Interface
 	/* 插件实现方法 */
 
 public static function header(){
+$ppd = Helper::options()->pluginUrl ;
+ echo '<script type="text/javascript" src="'.$ppd.'/notice/notice.js"></script>' . "\n";
 }
 
 public static function footer(){
-$ppd = Helper::options()->pluginUrl ;
- echo '<script type="text/javascript" src="'.$ppd.'/notice/notice.js"></script>' . "\n";
 include('welcome.php');
 
 
