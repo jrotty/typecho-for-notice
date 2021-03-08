@@ -5,7 +5,7 @@
  * @package notice
  * @author jrotty
  * @version 0.3
- * @link http://qqdie.com
+ * @link http://zezeshe.com
  */
 
 class notice_Plugin implements Typecho_Plugin_Interface
